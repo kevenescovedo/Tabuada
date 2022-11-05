@@ -1,25 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Tabuada from './tabuada';
+import Titulo2 from './titulo2';
+import Titulo from './titulo';
+let n = prompt("Digite um número que você deseja ver a tabuada");
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+  return (<div>
+    <Titulo titulo='FATEC' texto="Faculdade de tecnologia de Preseidente Prudente" link='https://www.fatecpp.edu.br/'/>
+     <Titulo2 titulo='TABUADA'/>
+     <Tabuada n ={n}></Tabuada>
+  </div>
+ )
+  
 }
 
 export default App;
